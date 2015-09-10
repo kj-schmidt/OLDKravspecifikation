@@ -1,0 +1,40 @@
+	\subsection{Use case 3 - Hent data og reset}
+		\begin{center}
+			\begin{tabular}{ | m{4cm} | m{8cm}| } 
+				\hline
+				Goal& Eksporter data gemt på blodtryk\\ 
+				\hline
+				Initiation &  Medicinsk personale\\
+				\hline
+				Actors and stakeholders & 
+				\begin{itemize}
+					\item Medicinsk personale(Primær)
+					\item Database (Sekundær)
+				\end{itemize} \\ 
+				\hline
+				References & - \\ 
+				\hline
+				Number of concurrent occurrences & Én pr. blodtryksapparat\\ 
+				\hline	
+				Precondition & 
+				\begin{itemize}
+					\item Blodtryksapparatet er blevet returneret efter brug
+					\item Data er blevet gemt på apparatet
+				\end{itemize} \\ 
+				\hline
+				Postcondition & 
+				\begin{itemize}
+					\item Se oversigt over behandlingsforløb og cyklusser 
+					\item Apparatet er reset og klar til brug
+				\end{itemize} \\ 
+				\hline
+				Main scenario & \begin{enumerate}
+					\item Forbind apparatet til computeren
+					\item Eksporter data
+					\item Formatér drevet på apparatet 
+				\end{enumerate} \\ 
+				\hline
+				Extensions & -\\ 
+				\hline
+			\end{tabular}
+		\end{center}

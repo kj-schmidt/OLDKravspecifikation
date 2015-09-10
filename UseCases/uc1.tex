@@ -1,0 +1,41 @@
+\subsection{Use case 1 - Måling af systolisk blodtryk}
+\begin{center}
+		\begin{tabular}{ | m{4cm} | m{8cm}| } 
+			\hline
+			Goal& Måling af systolisk blodtryk \\ 
+			\hline
+			Initiation &  Medicinsk personale\\
+			\hline
+			Actors and stakeholders & 
+			\begin{itemize}
+				\item Medicinsk personale(Primær)
+				\item Patient (Sekundær)
+			\end{itemize} \\ 
+			\hline
+			References & - \\ 
+			\hline
+			Number of concurrent occurrences & Én per behandling\\ 
+			\hline	
+			Precondition & 
+			\begin{itemize}
+				\item Patienten er registreret med et unikt ID
+				\item Blodtryksmanchetten er monteret på patientet
+			\end{itemize} \\ 
+			\hline
+			Postcondition & 
+			\begin{itemize}
+				\item The systoliske blodtryk er målt og konditionering kan begynde
+			\end{itemize} \\ 
+			\hline
+			Main scenario & \begin{enumerate}
+				\item Personalet monterer manchetten
+				\item Manchetten pumpes op til trykket overstiger det systoliske tryk
+				\item Luften lukkes gradsvis ud af manchetten(Specificer hastigheden) indtil der registreres oscillationer og det aktuelle tryk logges. 
+				\item Det systoliske blodtryk vises på displayet
+			\end{enumerate} \\ 
+			\hline
+			Extensions & [Extension 1] Det systoliske blodtryk kunne ikke måles: Gentag use case fra punkt 2 \\ 
+			\hline
+		\end{tabular}
+		
+	\end{center}
