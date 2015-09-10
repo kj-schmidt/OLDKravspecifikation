@@ -3,6 +3,7 @@
 \usepackage{fancyhdr} 	% To create header
 \usepackage{dirtytalk} % To create citations
 \usepackage{array} % To control and create fixed size tables
+\usepackage{longtable}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -24,7 +25,7 @@
 	\newpage
 	
 	\section{Introduktion og baggrund}
-	Formålet med dette dokument er at beskrive funktionelle og ikke-funktionelle krav for per konditionerings blodtryks apparatet. De funktionelle krav vil blive beskrevet ved hjælp af fully dressed use case diagrammer. En lille ændring
+	Formålet med dette dokument er at beskrive funktionelle og ikke-funktionelle krav for per konditionerings blodtryks apparatet. De funktionelle krav vil blive beskrevet ved hjælp af fully dressed use case diagrammer. 
 	
 	Beskrivelse af projektet: 
 	
@@ -52,5 +53,60 @@
 	
 	%UseCase 5
 	\input{UseCases/uc5.tex}
+	
+	%UseCase 6
+	\input{UseCases/uc6.tex}
+	
+	%UseCase 7
+	\input{UseCases/uc7.tex}
+	
+	\section{Ikke-funktionelle krav }
+	
+	\subsection{Filformat og opsætning}
+	\begin{enumerate}
+		\setlength\itemsep{0cm} % Decrease line distance
+		\item Data logged i formatet .csv og hver kolonne indeholder følgende værdier og enheder: 
+		\begin{enumerate}
+			\item Tidsstempel [yy:mm:dd hh:mm:ss]
+			\item Afklemningstryk [mmHg]
+			\item Gennemført afklemning [Boolean]
+			\item Systoliske blodtryk [mmHg]
+			\item Middelblodtryk (MAP) [mmHg]
+			\item Diastolisk blodtryk [mmHg]
+		\end{enumerate}
+		\item Der oprettet én fil pr patient, med filnavn tilsvarende det unikke patient ID
+	\end{enumerate}
+	
+	\subsection{Patient ID}
+	\begin{enumerate}
+		\setlength\itemsep{0cm} % Decrease line distance
+		\item Består af karaktererne A-Z og tallene 0-9
+		\begin{enumerate}
+			\item ID’et er fem karakterer lang: ***** svarende til 60 millioner kombinationer
+			\item ID’et er ikke case sensitiv
+		\end{enumerate}
+	\end{enumerate}
+	
+	
+	\subsection{Hukommelse}
+	\begin{enumerate}
+		\setlength\itemsep{0cm} % Decrease line distance
+		\item Information lagres på micro SDSC af typen:
+		\begin{enumerate}
+			\item Class 4
+			\item Fil system [fat32] og minimum 128mb
+		\end{enumerate}
+	\end{enumerate}
+	
+	\subsection{Forsyning}
+	\begin{enumerate}
+		\setlength\itemsep{0cm} % Decrease line distance
+		\item Konditionerings apparatet skal forsynes med 12V, min 2A
+		\begin{enumerate}
+			\item DC-connector (angiv diameter) 
+			\item 8 stk AAA batterier (1,5V)
+		\end{enumerate}
+	\end{enumerate}
+	
 	
 \end{document}

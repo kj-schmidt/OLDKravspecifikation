@@ -1,39 +1,45 @@
-	\subsection{Use case 2 - Konditionering cyklusser - ikke færdig}
+	\subsection{Use case 2 - Initialiser blodtryksmåling }
 		\begin{center}
 			\begin{tabular}{ | m{4cm} | m{8cm}| } 
 				\hline
-				Goal& Gennemfør én cyklusser\\ 
+				Goal& Måle blodtryk\\ 
 				\hline
 				Initiation &  Medicinsk personale\\
 				\hline
 				Actors and stakeholders & 
 				\begin{itemize}
-					\item Medicinsk personale(Primær)
-					\item Patient (Sekundær)
+					\item Medicinsk personale(primær)
+					\item Patient (sekundær)
 				\end{itemize} \\ 
 				\hline
-				References & - \\ 
+				References & Use case 3 \\ 
 				\hline
-				Number of concurrent occurrences & Én til mange\\ 
+				Number of concurrent occurrences & En til mange\\ 
 				\hline	
 				Precondition & 
 				\begin{itemize}
-					\item Det systoliske blodtryk er kendt
+					\item Manchetten er placeret på armen
+					\item Mode switch er sat til “\textit{Konditionering}”
 				\end{itemize} \\ 
 				\hline
 				Postcondition & 
 				\begin{itemize}
-					\item 5 cyklusser er blevet gennemført 
+					\item Blodtrykket er kendt
 				\end{itemize} \\ 
 				\hline
 				Main scenario & \begin{enumerate}
-					\item Manchetten blæses op til 200 mmHg 
-					\item Manchetten pumpes op til trykket overstiger det systoliske tryk
-					\item Luften lukkes gradvis ud af manchetten(Specificer hastigheden) indtil der registreres oscillationer og det aktuelle tryk logges. 
-					\item Det systoliske blodtryk vises på displayet
+					\setlength\itemsep{0cm} % Decrease line distance
+					\item Brugeren trykker på [Mål blodtryk]
+					\item Et nyt patient ID genereres
+					\subitem [Extension \#1] 
+					\item Patient ID’et vises på skærmen
+					\item Blodtrykket måles via \textit{use case 3}
+					\subitem [Extension \#2]
 				\end{enumerate} \\ 
 				\hline
-				Extensions &  -\\ 
+				Extensions &  [Extension \#1] Et patient ID eksisterer allerede på apparatet. Der genereres ikke noget nyt patient ID.
+				
+				[Extension \#2] Blodtrykket kunne ikke måles. Gentag use case 3 hvis extension 2 ikke lige er eksekveret. Ellers skrives i display “FEJL kunne ikke måle blodtryk” og use casen stopper\\ 
 				\hline
 			\end{tabular}
 		\end{center}
