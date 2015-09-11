@@ -4,6 +4,8 @@
 \usepackage{dirtytalk} % To create citations
 \usepackage{array} % To control and create fixed size tables
 \usepackage{longtable}
+\usepackage{graphicx}
+\graphicspath{ {Illustrationer/} }
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -38,6 +40,7 @@
 	
 	%Aktør beskrivelse
 	\input{UseCases/actorDescription.tex}
+	\pagebreak
 	
 	%Use case 1
 	\input{UseCases/uc1.tex}
@@ -59,6 +62,9 @@
 	
 	%UseCase 7
 	\input{UseCases/uc7.tex}
+	
+	%UseCase8
+	\input{UseCases/uc8.tex}
 	
 	\section{Ikke-funktionelle krav }
 	
@@ -107,6 +113,9 @@
 			\item 8 stk AAA batterier (1,5V)
 		\end{enumerate}
 	\end{enumerate}
+	
+	%User interface 
+	\input{userInterface.tex}
 	
 	
 \end{document}

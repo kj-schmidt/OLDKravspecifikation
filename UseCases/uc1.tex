@@ -1,6 +1,6 @@
 \subsection{Use case 1 - Konditionering}
 \begin{center}
-		\begin{tabular}{ | m{4cm} | m{8cm}| } 
+		\begin{longtable}{ | m{4cm} | m{8cm}| } 
 			\hline
 			Goal& Gennemføre konditioneringsbehandling  \\ 
 			\hline
@@ -37,11 +37,16 @@
 				\subitem[Extension \#2]
 				\item Blodtrykket vises på displayet og værdien gemmes i hukommelse
 				\item Cuffen fyldes med luft til et tryk på 25 mmHG over systolisk tryk (minimum 180 mmHg)
+			\end{enumerate} \\ 
+			\hline
+			Main scenario & \begin{enumerate}
+				\setlength\itemsep{0cm} % Decrease line distance
+				\setcounter{enumi}{7}				
 				\item Tidsstempel gemmes når trykket er opnået
-				\item Trykket opretholdes i 5 minutter(Okklusion)
+				\item Trykket opretholdes i 5 minutter(Okklusion) og resterende tid vises på displayet
 				\item Blodtrykket måles via \textit{use case 3}
 				fra punkt 2.
-				\item Deflaterer cuffen helt og forbliver i dette stadie i 5 min(Reperfusion) Ved deflation start gemmes tidsstempel.
+				\item Deflaterer cuffen helt og forbliver i dette stadie i 5 min(Reperfusion) Ved deflation start gemmes tidsstempel. Tid til næste okklusion vises på displayet
 				\item Gentag punkt 7-11 (en cyklus) fire gange. Det nuværende cyklus nummer vises i displayet
 			\end{enumerate} \\ 
 			\hline
@@ -49,6 +54,7 @@
 			
 			[Extension \#2] Blodtrykket kunne ikke måles. Gentag use case 3 hvis extension 2 ikke lige er eksekveret. Ellers skrives i display “FEJL kunne ikke måle blodtryk” og use casen stopper.  \\
 			\hline
-		\end{tabular}
+		\end{longtable}
 		
 	\end{center}
+	\pagebreak
