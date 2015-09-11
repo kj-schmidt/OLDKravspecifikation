@@ -13,7 +13,6 @@
     <COMPID name="Extension #2.2: Blodtrykket kunne ikke måles." mc="UseCase" uid="0e4439b0-7eb9-4895-a974-45bc32b5d46c"/>
     <COMPID name="Extension #4.1: Tegn på dårligt kredsløb" mc="UseCase" uid="b321f4f7-9412-4c4b-93be-ec54f4de51ec"/>
     <COMPID name="Extension #4.1: Use case 6 er aktiv" mc="UseCase" uid="f53b49f8-df1a-4ecf-ad1b-e418d9a25651"/>
-    <COMPID name="Interaction" mc="Interaction" uid="f6b76c75-5852-47cd-bd71-419d1ef315de"/>
     <COMPID name="Medicinsk personale" mc="Actor" uid="e4fd631d-547e-4a25-88ba-a44535f7acb1"/>
     <COMPID name="Microcontroller" mc="Class" uid="0de6548f-1db6-4c72-92f0-aa07f96dae93"/>
     <COMPID name="Over pressure protection" mc="Class" uid="cd019120-9600-4b86-9de1-979d7daf8215"/>
@@ -47,9 +46,6 @@
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
-      <COMP relation="OwnedBehavior">
-        <COMPID name="Interaction" mc="Interaction" uid="f6b76c75-5852-47cd-bd71-419d1ef315de"/>
-      </COMP>
       <COMP relation="OwnedElement">
         <COMPID name="Blood Pressure Monitor" mc="Class" uid="6a220e28-4c04-41cb-8c98-9da953061f6b"/>
         <COMPID name="Cuff" mc="Class" uid="074ba625-14e1-4370-ab12-e9d818dac76d"/>
