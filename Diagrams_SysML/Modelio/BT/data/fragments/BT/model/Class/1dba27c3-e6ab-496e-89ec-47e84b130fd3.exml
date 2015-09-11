@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Valve" version="3">
+  <DEPS>
+    <ID name="Valve" mc="Class" uid="1dba27c3-e6ab-496e-89ec-47e84b130fd3"/>
+    <FOREIGNID name="Block" mc="Stereotype" uid="00bc42a4-0000-19c9-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Valve" mc="Class" uid="1dba27c3-e6ab-496e-89ec-47e84b130fd3"/>
+    <PID name="Blodtryksmåler" mc="Package" uid="f0af66ab-ab34-4150-9466-06f480f861ef"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Valve]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <FOREIGNID name="Block" mc="Stereotype" uid="00bc42a4-0000-19c9-0000-000000000000"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Medicinsk personale" version="3">
+  <DEPS>
+    <ID name="Medicinsk personale" mc="Actor" uid="0be11a2b-cde8-4f9d-9131-37e5f7408076"/>
+    <FOREIGNID name="secondary" mc="Stereotype" uid="01ec1ac4-0000-2f04-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Medicinsk personale" mc="Actor" uid="0be11a2b-cde8-4f9d-9131-37e5f7408076"/>
+    <PID name="Blodtryksmåler" mc="Package" uid="f0af66ab-ab34-4150-9466-06f480f861ef"/>
+    <ATTRIBUTES>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Medicinsk personale]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <FOREIGNID name="secondary" mc="Stereotype" uid="01ec1ac4-0000-2f04-0000-000000000000"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

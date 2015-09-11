@@ -1,0 +1,616 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Interaction" version="3">
+  <DEPS>
+    <ID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+    <COMPID name="Sequence diagram" mc="SequenceDiagram" uid="fabe0a5e-1c5e-446c-a976-54ed7cdd643d"/>
+    <EXTID name="Cuff" mc="Class" uid="074ba625-14e1-4370-ab12-e9d818dac76d"/>
+    <EXTID name="Patient" mc="Actor" uid="904763c2-d7eb-46ca-baf3-879f07e4dbf1"/>
+    <EXTID name="Power system" mc="Class" uid="768e9fde-f8a3-4811-87d8-39b6c7748c33"/>
+    <FOREIGNID name="Allocated" mc="Stereotype" uid="00bc42a4-0000-19b8-0000-000000000000"/>
+  </DEPS>
+  <OBJECT>
+    <ID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+    <PID name="UC2: Initialiser blodtryksmåling " mc="UseCase" uid="a61a0c4b-1b10-445f-bfc5-9973f0fc255a"/>
+    <ATTRIBUTES>
+      <ATT name="IsReentrant">false</ATT>
+      <ATT name="Name"><![CDATA[Interaction]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="FormalGate">
+        <OBJECT>
+          <ID name="" mc="Gate" uid="c9977fbc-4b4f-423f-858c-2582cf1df54d"/>
+          <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">220</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="frewtrewtert" mc="Gate" uid="586f49e4-cd2e-492b-9628-282f4eb4656d"/>
+          <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">647</ATT>
+            <ATT name="Name"><![CDATA[frewtrewtert]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Fragment">
+        <COMPID name="" mc="Gate" uid="c9977fbc-4b4f-423f-858c-2582cf1df54d"/>
+        <OBJECT>
+          <ID name="InteractionUse" mc="InteractionUse" uid="eece63dc-f7cb-4ac9-aa4b-cf6c8e2be307"/>
+          <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+          <ATTRIBUTES>
+            <ATT name="EndLineNumber">348</ATT>
+            <ATT name="LineNumber">140</ATT>
+            <ATT name="Name"><![CDATA[InteractionUse]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Extension">
+              <FOREIGNID name="Allocated" mc="Stereotype" uid="00bc42a4-0000-19b8-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="InteractionUse" mc="InteractionUse" uid="4907e493-699b-4c7c-be65-bbd8975fbabc"/>
+          <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+          <ATTRIBUTES>
+            <ATT name="EndLineNumber">594</ATT>
+            <ATT name="LineNumber">420</ATT>
+            <ATT name="Name"><![CDATA[InteractionUse]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="CombinedFragment" mc="CombinedFragment" uid="0894298c-99ec-4e4a-a9af-ffb3d7dbf4c6"/>
+          <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+          <ATTRIBUTES>
+            <ATT name="Operator">SeqOp</ATT>
+            <ATT name="LineNumber">665</ATT>
+            <ATT name="Name"><![CDATA[CombinedFragment]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Operand">
+              <OBJECT>
+                <ID name="" mc="InteractionOperand" uid="ccd07b08-b66c-4f55-82dd-451f96cb2f64"/>
+                <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="EndLineNumber">877</ATT>
+                  <ATT name="LineNumber">665</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <COMPID name="frewtrewtert" mc="Gate" uid="586f49e4-cd2e-492b-9628-282f4eb4656d"/>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="b983f875-4b56-42b4-8f5e-2e4a60f4ac70"/>
+          <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">106</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Started">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="36fc9cae-66be-4112-9f67-68690244f18a"/>
+                <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Lifeline" mc="Lifeline" uid="51a1556e-8692-4a9a-bcfe-e8e189b2c7f3"/>
+                <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="f4be3e2b-c989-462a-9d92-ad762409f5de"/>
+          <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">281</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Lifeline" mc="Lifeline" uid="51a1556e-8692-4a9a-bcfe-e8e189b2c7f3"/>
+                <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionSpecification" uid="36fc9cae-66be-4112-9f67-68690244f18a"/>
+          <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">106</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Finish">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="f4be3e2b-c989-462a-9d92-ad762409f5de"/>
+                <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="Lifeline" mc="Lifeline" uid="51a1556e-8692-4a9a-bcfe-e8e189b2c7f3"/>
+                <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="CombinedFragment" mc="CombinedFragment" uid="f7ef3c82-0312-40c8-b3be-507ce8daf66a"/>
+          <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+          <ATTRIBUTES>
+            <ATT name="Operator">SeqOp</ATT>
+            <ATT name="LineNumber">265</ATT>
+            <ATT name="Name"><![CDATA[CombinedFragment]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Operand">
+              <OBJECT>
+                <ID name="InteractionOperand" mc="InteractionOperand" uid="9c6f344c-ece9-4233-ae94-820285c4de54"/>
+                <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="EndLineNumber">315</ATT>
+                  <ATT name="LineNumber">265</ATT>
+                  <ATT name="Name"><![CDATA[InteractionOperand]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="InteractionOperand" uid="d8ee2e79-585e-4f61-b608-b1c41a5538d8"/>
+                <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="EndLineNumber">469</ATT>
+                  <ATT name="LineNumber">316</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="InteractionUse" mc="InteractionUse" uid="4abd6988-dd36-4872-aef4-99f26fcf3973"/>
+          <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+          <ATTRIBUTES>
+            <ATT name="EndLineNumber">149</ATT>
+            <ATT name="LineNumber">79</ATT>
+            <ATT name="Name"><![CDATA[InteractionUse]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="c6b78a0f-039a-46cf-b747-5f1de2cd40af"/>
+          <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">101</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="create" mc="Message" uid="54934600-049c-4319-b4de-d750d26e1709"/>
+                <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">CreateMessage</ATT>
+                  <ATT name="Name"><![CDATA[create]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="c1908a5e-b6ac-4f1b-a4a6-6835fa72ca89"/>
+                      <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="r" mc="Lifeline" uid="876e0b2a-b7fe-49f3-812f-d5c797956722"/>
+                <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="c1908a5e-b6ac-4f1b-a4a6-6835fa72ca89"/>
+          <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">101</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="r1" mc="Lifeline" uid="91e89afb-6424-4d83-8873-19800bed90fd"/>
+                <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="02ed38bf-2365-4236-9c79-49d606638b9a"/>
+          <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">260</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="create" mc="Message" uid="80d43a5f-0f58-42c7-887b-d65f7f8d2acd"/>
+                <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">CreateMessage</ATT>
+                  <ATT name="Name"><![CDATA[create]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="4798c288-ef71-4988-a1c5-f0d082608b5e"/>
+                      <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="r" mc="Lifeline" uid="876e0b2a-b7fe-49f3-812f-d5c797956722"/>
+                <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="4798c288-ef71-4988-a1c5-f0d082608b5e"/>
+          <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">290</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="r1" mc="Lifeline" uid="91e89afb-6424-4d83-8873-19800bed90fd"/>
+                <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="99952a25-6d3b-4f77-854e-cfd5696ac892"/>
+          <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">319</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="SentMessage">
+              <OBJECT>
+                <ID name="destroy" mc="Message" uid="e26b336a-4136-4f4d-a556-a5f3429e5742"/>
+                <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+                <ATTRIBUTES>
+                  <ATT name="Argument"></ATT>
+                  <ATT name="KindOfMessage">CompleteKind</ATT>
+                  <ATT name="SortOfMessage">DestroyMessage</ATT>
+                  <ATT name="Name"><![CDATA[destroy]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="ReceiveEvent">
+                    <REFOBJ>
+                      <ID name="" mc="ExecutionOccurenceSpecification" uid="8de1f01c-61e4-4a13-bc8f-11e28c71fecb"/>
+                      <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="r" mc="Lifeline" uid="876e0b2a-b7fe-49f3-812f-d5c797956722"/>
+                <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="ExecutionOccurenceSpecification" uid="8de1f01c-61e4-4a13-bc8f-11e28c71fecb"/>
+          <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+          <ATTRIBUTES>
+            <ATT name="LineNumber">368</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="r1" mc="Lifeline" uid="91e89afb-6424-4d83-8873-19800bed90fd"/>
+                <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="CombinedFragment" mc="CombinedFragment" uid="4617df26-b073-4817-8e8a-8f785217cc17"/>
+          <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+          <ATTRIBUTES>
+            <ATT name="Operator">SeqOp</ATT>
+            <ATT name="LineNumber">294</ATT>
+            <ATT name="Name"><![CDATA[CombinedFragment]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Operand">
+              <OBJECT>
+                <ID name="" mc="InteractionOperand" uid="37bab6a2-7d06-41a4-ba3b-b0d8fa547a59"/>
+                <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+                <ATTRIBUTES>
+                  <ATT name="Guard"></ATT>
+                  <ATT name="EndLineNumber">293</ATT>
+                  <ATT name="LineNumber">294</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <COMPID name="InteractionOperand" mc="InteractionOperand" uid="9c6f344c-ece9-4233-ae94-820285c4de54"/>
+        <OBJECT>
+          <ID name="StateInvariant" mc="StateInvariant" uid="5eba010e-1e53-44b6-8375-9a3f26aebd03"/>
+          <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+          <ATTRIBUTES>
+            <ATT name="Body"></ATT>
+            <ATT name="EndLineNumber">390</ATT>
+            <ATT name="LineNumber">340</ATT>
+            <ATT name="Name"><![CDATA[StateInvariant]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Covered">
+              <REFOBJ>
+                <ID name="r" mc="Lifeline" uid="876e0b2a-b7fe-49f3-812f-d5c797956722"/>
+                <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedLine">
+        <OBJECT>
+          <ID name="" mc="Lifeline" uid="3041d6bb-52d2-4e4b-86dd-4051bb371678"/>
+          <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="DecomposedAs">
+              <OBJECT>
+                <ID name="" mc="PartDecomposition" uid="5344a50b-a4b3-4fe8-abb2-4de843aba4f5"/>
+                <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+                <ATTRIBUTES>
+                  <ATT name="EndLineNumber">0</ATT>
+                  <ATT name="LineNumber">-1</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Lifeline" mc="Lifeline" uid="51a1556e-8692-4a9a-bcfe-e8e189b2c7f3"/>
+          <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[Lifeline]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="DecomposedAs">
+              <OBJECT>
+                <ID name="PartDecomposition" mc="PartDecomposition" uid="0763cae8-5289-4fb2-9d41-c97955a1f8e7"/>
+                <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+                <ATTRIBUTES>
+                  <ATT name="EndLineNumber">0</ATT>
+                  <ATT name="LineNumber">-1</ATT>
+                  <ATT name="Name"><![CDATA[PartDecomposition]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Represented">
+              <REFOBJ>
+                <ID name="Cuff" mc="BindableInstance" uid="ef4244c8-adab-4e30-9709-d08b2c34c449"/>
+                <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="r" mc="Lifeline" uid="876e0b2a-b7fe-49f3-812f-d5c797956722"/>
+          <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[r]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <REFOBJ>
+                <ID name="r" mc="BindableInstance" uid="73a27f74-f54e-411a-aa01-8fb43e525bd7"/>
+                <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="r1" mc="Lifeline" uid="91e89afb-6424-4d83-8873-19800bed90fd"/>
+          <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[r1]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <REFOBJ>
+                <ID name="r1" mc="BindableInstance" uid="49be0165-b196-4bd9-aae4-a8e7c66d2c4a"/>
+                <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="r2" mc="Lifeline" uid="bf3164ec-995b-4653-8b57-6e3973c7e138"/>
+          <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+          <ATTRIBUTES>
+            <ATT name="Selector"></ATT>
+            <ATT name="Name"><![CDATA[r2]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Represented">
+              <REFOBJ>
+                <ID name="r2" mc="BindableInstance" uid="8e805d6d-50cc-4fef-ad40-e5e613f2202b"/>
+                <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedCollaboration">
+        <OBJECT>
+          <ID name="locals" mc="Collaboration" uid="081ad7e6-5b9d-4917-a735-d7639673858a"/>
+          <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+          <ATTRIBUTES>
+            <ATT name="IsConcurrent">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="IsLeaf">false</ATT>
+            <ATT name="IsRoot">false</ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="Name"><![CDATA[locals]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Declared">
+              <OBJECT>
+                <ID name="Cuff" mc="BindableInstance" uid="ef4244c8-adab-4e30-9709-d08b2c34c449"/>
+                <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[Cuff]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="r" mc="BindableInstance" uid="73a27f74-f54e-411a-aa01-8fb43e525bd7"/>
+                <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[r]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="Cuff" mc="Class" uid="074ba625-14e1-4370-ab12-e9d818dac76d"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="r1" mc="BindableInstance" uid="49be0165-b196-4bd9-aae4-a8e7c66d2c4a"/>
+                <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[r1]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="Power system" mc="Class" uid="768e9fde-f8a3-4811-87d8-39b6c7748c33"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="r2" mc="BindableInstance" uid="8e805d6d-50cc-4fef-ad40-e5e613f2202b"/>
+                <PID name="Interaction" mc="Interaction" uid="8951da68-3486-4e5c-938c-4b73863b1889"/>
+                <ATTRIBUTES>
+                  <ATT name="IsConstant">false</ATT>
+                  <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="Value"></ATT>
+                  <ATT name="Name"><![CDATA[r2]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Base">
+                    <ID name="Patient" mc="Actor" uid="904763c2-d7eb-46ca-baf3-879f07e4dbf1"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Sequence diagram" mc="SequenceDiagram" uid="fabe0a5e-1c5e-446c-a976-54ed7cdd643d"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
