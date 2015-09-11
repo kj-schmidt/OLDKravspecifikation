@@ -7,6 +7,7 @@
     <EXTID name="Extension #1.2: Blodtrykket kunne ikke måles." mc="UseCase" uid="77640320-b3b5-453e-a1f6-7eaf141c061c"/>
     <EXTID name="Extension #2.1: Patient kan ikke registreres" mc="UseCase" uid="7f3e08cf-9840-4fc5-9b9e-08174be8d0c4"/>
     <EXTID name="Extension #2.2: Blodtrykket kunne ikke måles." mc="UseCase" uid="0e4439b0-7eb9-4895-a974-45bc32b5d46c"/>
+    <EXTID name="Interaction" mc="Interaction" uid="aa8d510a-f868-45e2-9eae-3a0eae415d7d"/>
     <EXTID name="Patient" mc="Actor" uid="904763c2-d7eb-46ca-baf3-879f07e4dbf1"/>
     <EXTID name="UC3: Mål blodtryk" mc="UseCase" uid="e8e87c85-f94e-4558-aa99-6b69ca51f7e4"/>
     <FOREIGNID name="constraint" mc="NoteType" uid="00bc0b8c-0000-251b-0000-000000000000"/>
@@ -245,6 +246,96 @@
       </COMP>
       <COMP relation="OwnedBehavior">
         <COMPID name="Interaction" mc="Interaction" uid="aa8d510a-f868-45e2-9eae-3a0eae415d7d"/>
+      </COMP>
+      <COMP relation="OwnedInformationFlow">
+        <OBJECT>
+          <ID name="Air flow" mc="InformationFlow" uid="67415316-0b35-4504-a45f-6d2b672f794f"/>
+          <PID name="UC1: Konditionering" mc="UseCase" uid="d11e91f5-6f9a-4891-97bc-179a40570078"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Air flow]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="acd8c9c2-b2f0-49d6-a5a5-61a017634901"/>
+                <PID name="Interaction" mc="Interaction" uid="aa8d510a-f868-45e2-9eae-3a0eae415d7d"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="62c9ee89-f26d-44ce-b6b8-ecb6f0c39ff7"/>
+                <PID name="Interaction" mc="Interaction" uid="aa8d510a-f868-45e2-9eae-3a0eae415d7d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Air pressure [V]" mc="InformationFlow" uid="41db364f-31db-4131-811d-27a653acc13a"/>
+          <PID name="UC1: Konditionering" mc="UseCase" uid="d11e91f5-6f9a-4891-97bc-179a40570078"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Air pressure [V]]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="9e9d3e97-c797-4148-8fa3-446a3a7a7298"/>
+                <PID name="Interaction" mc="Interaction" uid="aa8d510a-f868-45e2-9eae-3a0eae415d7d"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <REFOBJ>
+                <ID name="" mc="ExecutionSpecification" uid="d5e8afc5-d611-45c3-a2ef-1ef2d29a43f6"/>
+                <PID name="Interaction" mc="Interaction" uid="aa8d510a-f868-45e2-9eae-3a0eae415d7d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Air flow" mc="InformationFlow" uid="0efb1c3d-3bbb-4bfc-973d-0e331e3a8e83"/>
+          <PID name="UC1: Konditionering" mc="UseCase" uid="d11e91f5-6f9a-4891-97bc-179a40570078"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Air flow]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="e5e7972e-d336-499d-a68c-21431799d65c"/>
+                <PID name="Interaction" mc="Interaction" uid="aa8d510a-f868-45e2-9eae-3a0eae415d7d"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="a8d7d9b5-c3b0-4143-8eed-216e2f767079"/>
+                <PID name="Interaction" mc="Interaction" uid="aa8d510a-f868-45e2-9eae-3a0eae415d7d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Air flow" mc="InformationFlow" uid="6e375cde-d98a-49b3-8381-d05124ce5c8d"/>
+          <PID name="UC1: Konditionering" mc="UseCase" uid="d11e91f5-6f9a-4891-97bc-179a40570078"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[Air flow]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="InformationSource">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="20dc5bf2-24df-43b9-9757-e66d43fbf891"/>
+                <PID name="Interaction" mc="Interaction" uid="aa8d510a-f868-45e2-9eae-3a0eae415d7d"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="InformationTarget">
+              <REFOBJ>
+                <ID name="" mc="ExecutionOccurenceSpecification" uid="8625498a-3a59-499f-b101-a7c39d3e6115"/>
+                <PID name="Interaction" mc="Interaction" uid="aa8d510a-f868-45e2-9eae-3a0eae415d7d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
       </COMP>
       <COMP relation="Descriptor">
         <OBJECT>
