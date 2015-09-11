@@ -28,6 +28,7 @@
     <COMPID name="UC5: Sikkerhedskontrol med pulsoximetri" mc="UseCase" uid="fa4729b5-c593-45c8-814f-d214128c2fc8"/>
     <COMPID name="UC6: Okklusionstræning" mc="UseCase" uid="e53ed31f-8dc6-4b80-a329-3c714c736b69"/>
     <COMPID name="UC7: Afbryd" mc="UseCase" uid="1563942a-e9a1-4cb6-8bb3-642ddad3a147"/>
+    <COMPID name="UC8: Setup" mc="UseCase" uid="1b0d8fd6-eef8-4432-84d1-a81d74ae5b04"/>
     <COMPID name="Usecase diagram" mc="UseCaseDiagram" uid="a7fb1f1c-4468-4fa3-aa48-81a1acf39d00"/>
     <COMPID name="User interface" mc="Class" uid="465d16e0-55d2-4c71-9d4f-17100365e287"/>
     <COMPID name="Valve" mc="Class" uid="1dba27c3-e6ab-496e-89ec-47e84b130fd3"/>
@@ -74,6 +75,7 @@
         <COMPID name="Database" mc="Actor" uid="b8ec6dd5-1c44-4703-904f-b218c09746ff"/>
         <COMPID name="Microcontroller" mc="Class" uid="0de6548f-1db6-4c72-92f0-aa07f96dae93"/>
         <COMPID name="SD Card" mc="Class" uid="6dd21248-7985-4bc0-ad0f-3f199c9c50b4"/>
+        <COMPID name="UC8: Setup" mc="UseCase" uid="1b0d8fd6-eef8-4432-84d1-a81d74ae5b04"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="overview diagram" mc="ClassDiagram" uid="0d106ccc-80e3-4b41-bdb4-3a49c5e17704"/>
